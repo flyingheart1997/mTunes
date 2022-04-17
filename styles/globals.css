@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@layer base {
+  body {
+    @apply font-body;
+  }
+}
+
+body{
+    background-color: #000;
+    font-weight: 900;
+    color: #354358;
+    padding: 0;
+    margin: 0;
+   overflow-y: hidden;
+}
+
+.leftbar ul li a .title{
+    display: none;
+}
+.leftbar ul li a .title::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(38,38,38, 1);
+    transform: rotate(45deg);
+    margin-top: 4px;
+    margin-left: -21px;
+}
+.leftbar ul li:hover a .title{
+    display: block;
+}
+.logout .name{
+    display: none;
+    z-index: 9999;
+}
+.logout:hover .name{
+    display: block;
+    z-index: 9999 !important;
+}
+
+#active{
+  background-color: darkslategrey;
+  border-right: 2px solid #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  display: block;
+}

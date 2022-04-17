@@ -11,7 +11,7 @@ const SearchScreen = ({spotifyApi,searchedValue }) => {
 
   const router = useRouter()
   const {data: session} = useSession()
-  const accessToken = session.accessToken
+  const accessToken = session?.accessToken
   const [categories,setCategories]=useState([])
 
   // search value.......//

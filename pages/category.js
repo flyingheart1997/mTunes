@@ -25,7 +25,7 @@ const Category = ({spotifyApi}) => {
 
   const router = useRouter();
   const { data: session } = useSession()
-  const accessToken = session.accessToken
+  const accessToken = session?.accessToken
   const [category, setCategory] = useState([])
   const [categoryPlaylist, setCategoryPlaylist] = useState([])
   const [userPlaylist, setUserPlaylist] = useState([])
